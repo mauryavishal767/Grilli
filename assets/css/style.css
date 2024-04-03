@@ -1,0 +1,1166 @@
+.color{
+  color: hsl(38, 61%, 73%);
+  color: hsla(0, 0%, 65%, 1);
+  color: hsla(30, 3%, 34%, 1);
+  color: hsla(40, 12%, 5%, 1);
+  color: hsla(30, 8%, 5%, 1);
+  color: hsla(0, 3%, 7%, 1);
+  color: hsla(210, 4%, 9%, 1);
+  color: hsla(210, 4%, 11%, 1);
+  color: hsla(180, 2%, 8%, 1);
+  color: hsla(0, 0%, 13%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  color: hsla(0, 0%, 100%, 0.2);
+  color: hsla(0, 0%, 100%, 0.1);
+  color: hsla(0, 0%, 0%, 1);
+  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(0, 0%, 0%, 0.15);
+}
+
+
+/*-----------------------------------*\
+  #index.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #0e0d0c;
+}
+
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+.diamond{
+  aspect-ratio: 1;
+  border: 1px solid hsl(38, 61%, 73%);
+  rotate: 45deg;
+}
+
+.heading{
+  color: hsl(38, 61%, 73%);
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+}
+.heading::after{
+  content: url(/Grilli/assets/images/separator.svg);
+  width: 100px;
+  display: block;
+  margin: 18px auto;
+}
+
+.bigHeading{
+  color: white;
+  text-align: center;
+  font-family: 'Forum', cursive;
+  font-size: calc(1.3rem + 2.4vw);
+  font-weight: 400;
+}
+
+p{
+  font-family: 'DM Sans', sans-serif;
+}
+
+.buttonBox{
+  border: 1.5px solid hsl(38, 61%, 73%);
+  margin: 40px 0;
+  padding: 20px 60px;
+  width: fit-content;
+}
+
+.buttonBox .button{
+  text-align: center;
+  color: hsl(38, 61%, 73%);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+/*-----------------------------------*\
+  #PRELOAD
+\*-----------------------------------*/
+.preLoader{
+  background-color: hsl(38, 61%, 73%);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+}
+
+.preLoader #center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.preLoader #center .circle {
+  border: 5px solid white;
+  border-top: 5px solid ;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px; 
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.preLoader #center p{
+  font-size: 50px;
+  font-family: 'Londrina Outline', sans-serif;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+/*-----------------------------------*\
+  #TOPBAR
+\*-----------------------------------*/
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  border-bottom: 1px solid gold;
+  background: white;
+}
+
+.topBar .left{
+  display: flex;
+}
+
+.topBar .right{
+  display: flex;
+}
+
+.topBar article{
+  display: flex;
+  margin: 10px;
+}
+
+.topBar article p{
+  margin-left: 5px;
+}
+
+.topBar .diamond{
+  height: 5px;
+  align-self: center;
+  margin: 10px;
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+header{
+  height: 100px;
+  width: 100vw;
+  background: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img{
+  height: 50%;
+  margin-left: 20px;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav a{
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  font-size: small;
+  font-weight: bolder;
+  margin: 0 15px;
+}
+
+header nav #home{
+  color :hsl(38, 61%, 73%);
+  border-bottom: 1px solid hsl(38, 61%, 73%);
+}
+
+
+
+header nav #table{  
+  background: hsl(38, 61%, 73%);
+  color: black;
+  padding: 20px 50px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+header nav .nav:hover{
+  color :hsl(38, 61%, 73%);
+  border-bottom: 1px solid hsl(38, 61%, 73%);
+}
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+
+
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+body main section.service{
+  background-color: hsla(30, 8%, 5%, 1);
+  padding: 70px 0;
+  position: relative;
+}
+
+body main section.service .upRight{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body main section.service .downLeft{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.service .banner{
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service .banner .innerBanner{
+  z-index: 1;
+}
+
+.service .banner .innerBanner .photo{
+  height: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.service .banner .innerBanner .photo .bg{
+
+  position: absolute;
+  width: 140px;
+  top: 0;
+  
+}
+
+.service .banner .innerBanner .photo .img{
+  position: absolute;
+  margin: auto 0;
+  
+}
+
+.service .banner #Appetizers p:first-of-type{
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 80px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.service .banner .innerBanner p.type{
+  color: white;
+  text-align: center;
+  font-family: 'Forum', cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.service .banner .innerBanner p:last-of-type{
+  text-align: center;
+}
+
+.service .banner .innerBanner p:last-of-type a{
+  text-decoration: none;
+  color: hsl(38, 61%, 73%);
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+}
+
+.service .banner .innerBanner p:last-of-type a:hover{
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+body main section.about{
+  background-color: hsla(210, 4%, 9%, 1);
+  padding: 100px 0 230px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body main section.about .text{
+  width: 40vw;
+  color : white;
+}
+
+body main section.about .text .aboutPara{
+  text-align: center;
+  padding: 40px;
+  line-height: 30px;
+}
+
+body main section.about .text #call{
+  font-weight: 700;
+  text-align: center;
+}
+
+body main section.about .text #number{
+  text-align: center;
+  font-size: 1.5rem;
+  color: hsl(38, 61%, 73%);
+}
+
+body main section.about .text .buttonBox{
+  border: 1.5px solid hsl(38, 61%, 73%);
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+body main section.about .text .buttonBox .button{
+  text-align: center;
+  color: hsl(38, 61%, 73%);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+body main section.about .photo{
+  position: relative;
+}
+
+body main section.about .photo #badgeBg{
+  position: absolute;
+  top: -67px;
+  right: 0;
+  z-index: 1;
+
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body main section.about .photo #badge{
+  position: absolute;
+  top: -67px;
+  right: 0;
+  z-index: 2;
+}
+
+body main section.about .photo #bgPattern{
+  position: absolute;
+  width: 140px;
+  left: -5px;
+  bottom: -130px;
+  z-index: 1;
+}
+
+body main section.about .photo #absImg{
+  position: absolute;
+  left: -90px;
+  bottom: -87px;
+  z-index: 2;
+}
+/*-----------------------------------*\
+  #SPECIAL DISH
+\*-----------------------------------*/
+
+body main section.specialDish{
+  background-color: hsla(30, 8%, 5%, 1);
+  display: flex;
+}
+
+body main section.specialDish .img{
+  overflow: hidden;
+  height: fit-content;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+body main section.specialDish .text{
+  color: white;
+  width: 30vw;
+  margin: auto 3vw auto 12vw;
+  position: relative;
+}
+
+body main section.specialDish .text .badge-1{
+  position: absolute;
+  left: -60px;
+}
+
+body main section.specialDish .text .heading{
+  text-align: left;
+}
+
+body main section.specialDish .text .heading::after{
+  margin: 18px auto 18px 0;
+}
+
+body main section.specialDish .text .bigHeading{
+  text-align: left;
+}
+
+body main section.specialDish .text .specialPara{
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+body main section.specialDish .text .price{
+  color: #595754;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  margin: 40px 0;
+}
+
+body main section.specialDish .text .price span{
+  color: hsl(38, 61%, 73%);
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+body main section.specialDish .text .buttonBox{
+  border: 1.5px solid hsl(38, 61%, 73%);
+  margin: 40px 0;
+  padding: 20px 60px;
+  width: fit-content;
+}
+
+body main section.specialDish .text .buttonBox .button{
+  text-align: center;
+  color: hsl(38, 61%, 73%);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+/*-----------------------------------*\
+  #MENU
+\*-----------------------------------*/
+
+body main section.menu{
+  background: hsla(210, 4%, 9%, 1);
+  padding: 100px 0;
+  position: relative;
+}
+
+body main section.menu *,
+body main section.menu p.heading,
+body main section.menu p.bigHeading{
+  z-index: 1;
+}
+
+body main section.menu .chart{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 200px;
+  padding: 50px;
+}
+
+body main section.menu .chart .dish{
+  margin: 25px 0;
+}
+
+body main section.menu .chart .dish img{
+  float: left;
+  margin-right: 15px;
+}
+
+body main section.menu .chart .dish .dishName{
+  font-family: 'Forum', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+body main section.menu .chart .dish span.tag{
+  background:hsl(38, 61%, 73%);
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 4px 8px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+body main section.menu .chart .dish span.price{
+  float: right;
+  font-size: 24px;
+  color: hsl(38, 61%, 73%);
+  vertical-align: middle;
+}
+
+body main section.menu .chart .dish .aboutDish{
+  font-size: 15px;
+  padding: 10px;
+  color: #a6a6a6;
+}
+
+body main section.menu .open{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+body main section.menu .open span{
+  color: hsl(38, 61%, 73%);
+  
+}
+
+body main section.menu .buttonBox{
+  margin: 40px auto;
+}
+
+body main section.menu img.left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+body main section.menu img.right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/*-----------------------------------*\
+  #TESTIMONIALS
+\*-----------------------------------*/
+
+body main section.testimonials{
+  background-image: url(/Grilli/assets/images/testimonial-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  padding-block-end: 340px;
+}
+
+body main section.testimonials img.bg{
+  width: 110%;
+  text-align: center;
+}
+
+body main section.testimonials .said{
+  width: 100%;
+  
+}
+
+body main section.testimonials .said p.q{
+  color: white;
+  font-family: 'Forum', cursive;
+  font-size: 6rem;
+  line-height: 0.5em;
+  text-align: center;
+}
+
+body main section.testimonials .said p.words{
+  color: white;
+  font-family: 'Forum', cursive;
+  font-size: 3rem;
+  line-height: 70px;
+  text-align: center;
+  padding: 0 100px;
+}
+
+body main section.testimonials .said .b{
+  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+body main section.testimonials .said .b .diamond{
+  width: 6px;
+  display: inline-block;
+  margin: 2px;
+
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ 
+body main section.testimonials .said .person{
+  display: grid;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+body main section.testimonials .said .person img{
+  border-radius: 50%;
+}
+
+body main section.testimonials .said .person p{
+  text-transform: uppercase;
+  color: hsl(38, 61%, 73%);
+  font-size: 15px;
+  margin: 20px 0;
+
+}
+
+/*-----------------------------------*\
+  #RESERVATION
+\*-----------------------------------*/
+
+body main section.reservation{
+  background: hsla(210, 4%, 9%, 1);
+  width: 100vw;
+  height: 425px;
+  position: relative;
+}
+
+body main section.reservation .container{
+  position: absolute;
+  top: -290px;
+  left: calc(8vw/2);
+  width: 92%;
+  margin: 0 auto;
+  background: hsla(30, 8%, 5%, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+body main section.reservation .container .online{
+  width: 56.5%;
+  padding: 60px;
+}
+
+body main section.reservation .container .online > p{
+  color: white;
+  text-align: center;
+  margin: 10px 0 ;
+}
+
+body main section.reservation .container .online > p span{
+  color: hsl(38, 61%, 73%);
+}
+
+body main section.reservation .container .online form{
+  margin-top: 40px;
+}
+
+body main section.reservation .container .online form div{
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+body main section.reservation .container .online form input[type="text"]{
+  color: #969797;
+  background: #1b1c1d;
+  border: 1px solid #323334;
+  padding: 18px;
+  width: 43%;
+}
+
+body main section.reservation .container .online form input[type="text"]::placeholder{
+  font-size: 15px;
+}
+
+body main section.reservation .container .online form .people,
+body main section.reservation .container .online form .date,
+body main section.reservation .container .online form .time{
+  background: #1b1c1d;
+  border: 1px solid #323334;
+  color: white;
+  padding: 18px;
+  width: 26%;
+}
+
+body main section.reservation .container .online form select,
+body main section.reservation .container .online form input[type="date"]{
+  width: 100%;
+  background: #1b1c1d;
+  border: none;
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+body main section.reservation .container .online form textarea{
+  width: 100%;
+  height: 140px;
+  background: #1b1c1d;
+  border: 1px solid #323334;
+  color: white;
+  resize: none;
+  padding: 20px;
+  font-size: 18px;
+}
+
+body main section.reservation .container .online form textarea::placeholder{
+  font-size: 18px;
+}
+
+body main section.reservation .container .online form input[type="submit"]{
+  width: 100%;
+  background: hsl(38, 61%, 73%);
+  border: 1px solid hsl(38, 61%, 73%);
+  padding: 14px;
+}
+
+body main section.reservation .container .online form p.button{
+  background: hsl(38, 61%, 73%);
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+
+body main section.reservation .container .contact{
+  width: 33.5%;
+  background-image: url(/Grilli/assets/images/form-pattern.png);
+  background-size: cover;
+  padding: 70px 0;
+}
+
+body main section.reservation .container .contact p{
+  text-align: center;
+} 
+
+body main section.reservation .container .contact p#a{
+  font-weight: 700;
+  margin-top: 50px;
+  color: white;
+}
+
+body main section.reservation .container .contact p#b{
+  color: hsl(38, 61%, 73%);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+body main section.reservation .container .contact .diamond{
+  height: 8px;
+  margin: 20px auto;
+}
+
+body main section.reservation .container .contact p.c{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: white;
+}
+
+body main section.reservation .container .contact p.d{
+  color: #797978;
+}
+
+body main section.reservation .container .contact div{
+  margin: 40px 0;
+}
+
+
+/*-----------------------------------*\
+  #FEATURES
+\*-----------------------------------*/
+
+body main section.features{
+  background: hsla(210, 4%, 9%, 1);
+  color: white;
+  padding: 100px 50px;
+}
+
+body main section.features div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+body main section.features div div{
+  background: #121111;
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 40px 20px;
+}
+
+body main section.features div div img{
+  height: 80px;
+  width: 100px;
+}
+
+body main section.features div div .feature{
+  margin: 20px 0;
+  font-family: "Forum", cursive;
+  font-size: 25px;
+}
+
+body main section.features div div .discription{
+  font-size: 14px;
+  color: rgb(166, 166, 166);
+  text-align: center;
+}
+
+
+/*-----------------------------------*\
+  #EVENT
+\*-----------------------------------*/
+
+body main section.event{
+  background: #121111;
+  padding: 100px 50px;
+}
+
+body main section.event .bigHeading{
+  margin-bottom: 40px;
+}
+
+body main section.event div{
+  display: flex;
+  justify-content: space-between;
+}
+
+body main section.event div div.box{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+body main section.event div div.box div.content{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  box-shadow: 0px -110px 20px rgba(0, 0, 0, 0.7) inset;
+}
+
+body main section.event div div.box div.content p.date{
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  padding: 5px 10px;
+  background: black;
+  color: hsl(38, 61%, 73%);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+}
+
+body main section.event div div.box div.content p.big{
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  font-family: "Forum", cursive;
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  bottom: 30px;
+}
+
+body main section.event div div.box div.content p.small{
+  color: hsl(38, 61%, 73%);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 355px;
+}
+
+body main section.event button{
+  background: #121111;
+  border: 2px solid hsl(38, 61%, 73%);
+  text-align: center;
+  color: hsl(38, 61%, 73%);
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 18px 45px;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+}
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+body footer{
+  background-image: url(/Grilli/assets/images/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+body footer > div{
+  display: grid;
+  grid-template-columns: 0.60fr 1fr 0.60fr;
+}
+
+body footer > div .nav{
+  display: grid;
+  place-items: center;
+}
+
+body footer > div .nav div{
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+body footer > div .nav a{
+  display: block;
+  text-decoration: none;
+  color: #a6a6a6;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+
+
+body footer > div .middle{
+  background-color: #0e0d0b;
+  background-image: url(/Grilli/assets/images/footer-form-bg.png);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  height: 640px;
+  display: grid;
+  place-items: center;
+}
+
+body footer > div .middle img.left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+}
+
+body footer > div .middle img.right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+}
+
+body footer > div .middle .content{
+  justify-items: center;
+  height: 440px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+body footer > div .middle .content div:first-of-type{
+  margin: 25px 0;
+}
+
+body footer > div .middle .content div:first-of-type p{
+  color: #a6a6a6;
+  font-weight: 500;
+  padding: 5px;
+}
+
+body footer > div .middle .content .box{
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+body footer > div .middle .content div.diamond{
+  width: 6px;
+  display: inline-block;
+  margin: 2px;
+
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body footer > div .middle .content h3{
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color:white;
+  
+}
+
+body footer > div .middle .content > p{
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 400;;
+}
+
+body footer > div .middle .content > p span{
+  color: white;
+}
+
+body footer > div .middle .content form{
+  background: #1b1c1d;
+  border: 0.25px solid #a6a6a6;
+  width: 35vw;
+  display: flex;
+  margin-top: 30px;
+}
+
+body footer > div .middle .content form ion-icon{
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto 15px;
+}
+
+body footer > div .middle .content form input{
+  background: #1b1c1d;
+  color: #a6a6a6;
+  font-size: 16px;
+  width: 55%;
+  height: 100%;
+  padding: 15px 0;
+  border: none;
+}
+
+body footer > div .middle .content form button{
+  width: 35%;
+  background: hsl(38, 61%, 73%);
+  color: black;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "DM Sans", sans-serif;
+}
+
+body footer .copyRight{
+  color: #8f8f8f;
+  margin-top: 60px;
+  text-align: center;
+}
+
+body footer .copyRight a{
+  color: hsl(38, 61%, 73%);
+}
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+body > .top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: hsl(38, 61%, 73%);
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+}
+
+body > .top ion-icon{
+  rotate: 90deg;
+  color: #0e0d0b;
+  height: 22px;
+  width: 22px;
+}
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
